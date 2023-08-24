@@ -39,13 +39,13 @@ const remainingFormatted = computed(() => {
 <template>
   <div ref="clock" :style="{ marginTop: clockTop }">
     <p class="remaining">
-      Time Remaining
+      Qolgan vaqt
     </p>
     <p class="time">
       {{ remainingFormatted }}
     </p>
     <p class="until">
-      Until {{ untilFormatted }}
+      {{ untilFormatted }}-gacha
     </p>
   </div>
 </template>
