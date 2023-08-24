@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Countdown from './components/Countdown.vue'
 
-const defaultDate = '2025/01/01'
+const defaultDate = '2024/06/01'
 
 function getUntilDate() {
   const param = new URL(location.href).searchParams.get('until') || defaultDate
