@@ -20,7 +20,7 @@ const until = getUntilDate()
 
 <style>
 h1 {
-  color: #fff;
+  color: #fff !important;
   font-size: x-large;
   font-family: 'Times New Roman', Times, serif;
 }
