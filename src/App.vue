@@ -17,3 +17,11 @@ const until = getUntilDate()
   <!-- <Countdown :until="until" /> -->
   <h1>Salom Musobek</h1>
 </template>
+
+<style>
+h1 {
+  color: #fff;
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+}
+</style>
