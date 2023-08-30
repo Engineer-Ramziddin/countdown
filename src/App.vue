@@ -14,7 +14,7 @@ const until = getUntilDate()
 </script>
 
 <template>
-  <h1>Salom Musobek</h1>
+  <h1>Assalomu alaykum Abdulmuttolib</h1>
   <Countdown :until="until" />
 </template>
 
