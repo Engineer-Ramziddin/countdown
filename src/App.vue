@@ -1,13 +1,20 @@
 <script setup lang="ts">
 import Countdown from './components/Countdown.vue'
 
-const defaultDate = '2025/01/01'
+// Hozirgi yilning oxiri va keyingi yilning 1-yanvarini avtomatik hisoblash
+function getNextYearDate() {
+  const now = new Date()
+  const nextYear = now.getFullYear() + 1
+  return `${nextYear}/01/01`
+}
 
+// `until` parametrni olish yoki avtomatik kelasi yilni o'rnatish
 function getUntilDate() {
-  const param = new URL(location.href).searchParams.get('until') || defaultDate
-  if (/\d{8}/.test(param))
+  const param = new URL(location.href).searchParams.get('until')
+  if (param && /\d{8}/.test(param))
     return `${param.substring(0, 4)}/${param.substring(4, 6)}/${param.substring(6, 8)}`
-  return defaultDate
+
+  return getNextYearDate()
 }
 
 const until = getUntilDate()
